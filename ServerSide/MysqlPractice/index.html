@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Iphone</title>
+  </head>
+
+  <body>
+    <h1>Add iPhone</h1>
+    <!-- The form on the HTML page should send a POST request to a URL named
+"/add-product". So, when the form is submitted, the data will be sent/posted to--- 
+ http://localhost:1234/add-product route -->
+    <form action="http://localhost:1234/add-product" method="post">
+      <label for="iphoneLink">Product URL:</label><br />
+      <input type="text" name="product_url" />
+      <br /><br />
+      <label for="name">Product Name:</label><br />
+      <input type="text" name="iphoneName" />
+      <br /><br />
+      <label for="imgPath">Product Image Path:</label><br />
+      <input type="text" name="product_img" />
+      <br /><br />
+ 
+      <label for="product_link">Product Link:</label><br />
+      <input type="text" name="product_link" />
+      <br /><br />
+      <label for="StartPrice">Starting price:</label><br />
+      <input type="text" name="StartPrice" />
+      <br /><br />
+      <label for="priceRange">Price range:</label><br />
+      <input type="text" name="priceRange" />
+      <br /><br />
+      <label for="briefDescription">Brief Description:</label><br />
+      <textarea name="briefDescription" cols="30" rows="10"></textarea>
+      <br /><br />
+      <label for="fullDescription">Full Description:</label><br />
+      <textarea name="fullDescription" cols="30" rows="10"></textarea>
+      <br /><br />
+      <label for="userName">User Name:</label><br />
+      <input type="text" name="userName" ></input>
+      <br /><br />
+      <label for="userPassword">Password:</label><br />
+      <input type="password" name="userPassword" ></input>
+      <br /><br />
+      <input type="submit" value="App iPhone" />
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>
